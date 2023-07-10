@@ -288,3 +288,82 @@ main {
     right: 21px;
     top: 22px;
 }
+
+.add {
+    background-color: #fff;
+    padding: 20px 30px 30px;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+}
+
+.add__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#input__file {
+  display: none;
+}
+.add__title {
+    margin-bottom: 15px;
+}
+
+.input__file-img {
+    width: 100%;
+}
+
+.add__input-name {
+    margin-top: 20px;
+    max-width: 540px;
+    width: 100%;
+}
+
+.add__input-name::placeholder {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.choose__category {
+    padding: 13px;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    color: #000;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: Ubuntu;
+    background: #F5F5F5;
+}
+
+.add__textarea {
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    background: #F5F5F5;
+    resize: none;
+    padding: 13px 0 0 15px;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+} 
+
+.add__textarea::placeholder {
+    color: #000;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.add_btn {
+    max-width: 550px;
+    width: 100%;
+    border: none;
+    color: #FFF;
+    font-family: Ubuntu;
+    font-size: 16px;
+    font-weight: 300;
+    cursor: pointer;
+}

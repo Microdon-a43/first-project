@@ -22,24 +22,43 @@
           </div>
           <div class="header__buttons">
             <a href="login.html" class="header__buttons-btn btn-enter">Войти</a>
-            <a href="registration.html" class="header__buttons-btn btn-registration"
-              >Регистрация</a>
+            <a
+              href="registration.html"
+              class="header__buttons-btn btn-registration"
+              >Регистрация</a
+            >
           </div>
         </div>
       </div>
     </header>
     <main class="main">
-        <div class="container">
-            <div class="login">
-                <h1 class="add__title title">Добавить Пост</h1>
-                <form class="login__form">
-                    <input class="login__input-name" type="file" placeholder="Username">
-                    <input class="login__input-pass" type="text" placeholder="Password">
-                    <a class="login__forgot" href="#">Забыли пароль?</a>
-                    <a class="login__btn button" href="account.html">Войти</a>
-                </form>
-            </div>
+      <div class="container">
+        <div class="add">
+          <h1 class="add__title title">Добавить Пост</h1>
+          <div class="add__form-wrapper">
+            <form class="add__form" enctype="multipart/form-data">
+                <label for="input__file"><img class="input__file-img" src="images/add-img.png" alt=""></label>
+                <input 
+                  class="add__input-file"
+                  id="input__file"
+                  type="file"
+                  multiple
+                />
+              </form>
+              <input class="add__input-name" type="text" placeholder="Введите название поста">
+              <select class="choose__category" name="select" id="">
+                <option value="Выберите категорию">Выберите категорию</option>
+                <option value="Еда">Еда</option>
+                <option value="Еда">Спорт</option>
+                <option value="Еда">Развлечения</option>
+                <option value="Еда">Туризм</option>
+              </select>
+              <textarea class="add__textarea" name="" id="" cols="30" rows="10" placeholder="Введите описание поста"></textarea>
+              <button class="add_btn button">Добавить</button>
+          </div>
+         
         </div>
+      </div>
     </main>
     <footer class="footer"></footer>
   </body>
