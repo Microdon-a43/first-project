@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__wrapper">
+          <div class="header__logo">
+            <a href="index.html"><img src="images/logo.png" alt="" /></a>
+          </div>
+          <div class="header__buttons">
+            <a href="add.html" class="header__buttons-btn btn-enter">Добавить пост</a>
+            <div class="account__info">
+              <img class="account-img" src="images/terminator.jpg" alt="" />
+              <img src="images/arrow.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="container">
+        <div class="account__content">
+          <article class="account__content-item">
+            <div class="image__box">
+               <img class="account__content-img" src="images/post-bg.jpg" alt=""/>
+                <img class="like_icon" src="images/like.png" alt="">
+            </div>
+            <div class="account__content-item_box">
+              <h2 class="account__content-item_title">
+                npm audit: Broken by Design
+              </h2>
+              <p class="account__content-item_date">July 7, 2021 • 14 min read</p>
+              <p class="account__content-item_text">
+                Security is important. Nobody wants to be the person advocating
+                for less security. So nobody wants to say it. But somebody has
+                to say it.The way npm audit works is broken. Its rollout as a
+                default after every npm install was rushed, inconsiderate, and
+                inadequate for the front-end tooling.
+              </p>
+            </div>
+            <div class="account__content-item_info">
+              <div class="account__content-item_info-leftside">
+                <img class="account__content-item_photo" src="images/terminator.jpg" alt="">
+                <span class="account__content-item_name">Arnold Schwarzenegger</span>
+              </div>
+              <div class="account__content-item_info-rightside">
+                <img src="images/like.svg" alt="">
+                <span>10</span>
+                <img src="images/eye.svg" alt="">
+                <span>47</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="others">
+              <article class="others__item">
+                <div class="others__item-top">
+                  <h2 class="others__item-top_title">
+                    Многие думают, что Lorem Ipsum
+                  </h2>
+                  <a href="#"
+                    ><img class="others__item-top_img" src="images/vector.svg" alt=""
+                  /></a>
+                </div>
+                <span class="others__item-date">17 декабря 2022 г.</span>
+                <p class="others__item-text">
+                  Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+                  штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum
+                </p>
+              </article>
+              <article class="others__item">
+                <div class="others__item-top">
+                  <h2 class="others__item-top_title">
+                    Многие думают, что Lorem Ipsum
+                  </h2>
+                  <a href="#"
+                    ><img class="others__item-top_img" src="images/vector.svg" alt=""
+                  /></a>
+                </div>
+                <span class="others__item-date">17 декабря 2022 г.</span>
+                <p class="others__item-text">
+                  Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney,
+                  штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum
+                </p>
+              </article>
+       
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+  </body>
+</html>

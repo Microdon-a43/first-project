@@ -1,3 +1,6 @@
+
+/* font-family: 'Inter', sans-serif; */
+
 html {
     box-sizing: border-box;
 }
@@ -17,6 +20,17 @@ a {
 
 body {
     background-color: #FFFEF9;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+input {
+    font-family: Ubuntu;
+    max-width: 336px;
+    width: 100%;
+    border-radius: 5px;
+    background: #F5F5F5;
+    border: 1px solid #F5F5F5;
+    padding: 13px 15px;
 }
 
 .container {
@@ -33,27 +47,39 @@ body {
     font-weight: 700;
 }
 
+.button {
+    background-color: #D23669;
+    max-width: 336px;
+    width: 100%;
+    padding: 13px 15px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .header {
-    height: 58px;
     background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
 .header__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;  
-    padding-top: 15px;  
+    padding: 11px 0;
 }
 
-.header__form {
+.header__buttons {
     display: flex;
     gap: 20px;
+    align-items: center;
 }
-.header__form-btn {
+.header__buttons-btn {
     font-size: 12px;
     font-weight: 400;
     padding: 8px 29px;
     border-radius: 5px;
+    font-family: 'Inter', sans-serif;
 }
 .btn-enter {
     background-color: #D23669;
@@ -63,7 +89,6 @@ body {
 .btn-registration {
     color: #D23669;
     border: 1px solid #D23669;
-
 }
 
 main {
@@ -74,15 +99,26 @@ main {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 17px; 
 }
 
-.home__item-top {
+.home__item,
+.others__item {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    padding: 13px 43px 21px;
+    position: relative;
+}
+
+.home__item-top,
+.others__item-top {
     display: flex;
     justify-content: space-between;
 }
 
-.home__item-top_title {
+.home__item-top_title,
+.others__item-top_title {
     color: #D23669;
     font-family: Ubuntu;
     font-size: 24px;
@@ -90,7 +126,9 @@ main {
     margin-bottom: 5px;
 }
 
-.home__item-date {
+.home__item-date,
+.others__item-date
+{
     color: #A5A5A5;
     font-family: Ubuntu;
     font-size: 12px;
@@ -98,11 +136,155 @@ main {
     font-weight: 700;
 }
 
-.home__item-text {
+.home__item-text,
+.others__item-text {
+    max-width: 445px;
     color: #000;
     font-family: Ubuntu;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
+    margin-top: 6px;
 }
 
+.home__item-top_img,
+.others__item-top_img{
+    position: absolute;
+    right: 22px;
+    top: 13px;
+}
+
+
+.login {
+    max-width: 396px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
+    background: #FFF;
+    padding: 30px;
+}
+.login__title {
+    margin-bottom: 25px;
+}
+.login__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.login__input-name,
+.login__input-pass,
+.login__input-confirm{
+    margin-bottom: 25px;
+}
+
+.login__forgot {
+    display: block;
+    align-self: flex-end;
+    font-size: 12px;
+    font-weight: 400;
+    color: #D23669;
+    margin-bottom: 15px;
+}
+
+.account__content {
+    border-radius: 5px 5px 0px 0px;
+    border: 1px solid #E8E8E8;
+    background-color: #fff;
+    margin-bottom: 50px;
+}
+
+.account__info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.account-img {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.account__content-img {
+    width: 100%;
+}
+
+.account__content-item_box {
+    padding: 15px 17px 16px 18px;
+}
+.account__content-item_title {
+    padding-top: 15px;
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.account__content-item_date {
+    margin-bottom: 10px;
+    color: #A5A5A5;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.account__content-item_text {
+    color: #000;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 16px;
+}
+
+.account__content-item_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 18px;
+    border-top: 1px solid #E8E8E8;
+}
+
+.account__content-item_photo {
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.account__content-item_info-leftside {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.account__content-item_name {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.account__content-item_info-rightside span {
+    color: #454545;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.others {
+    margin-bottom: 183px;
+}
+.others__item + .others__item {
+    margin-top: 20px;
+}
+
+.image__box {
+     position: relative;
+}
+
+.like_icon {
+    position: absolute;
+    right: 21px;
+    top: 22px;
+}
