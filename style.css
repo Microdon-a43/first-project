@@ -287,7 +287,10 @@ main {
     position: absolute;
     right: 21px;
     top: 22px;
+    cursor: pointer;
 }
+
+
 
 .add {
     background-color: #fff;
@@ -317,6 +320,9 @@ main {
     margin-top: 20px;
     max-width: 540px;
     width: 100%;
+}
+.add__input-file {
+    cursor: pointer;
 }
 
 .add__input-name::placeholder {
